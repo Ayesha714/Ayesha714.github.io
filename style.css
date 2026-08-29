@@ -75,7 +75,7 @@ header {
 .header-container {
 
     /* Maximum width of the header content. */
-    max-width: 1050px;
+    max-width: 900px;
 
     /* Automatically centre the container. */
     margin: 0 auto;
@@ -613,13 +613,14 @@ footer {
    RESEARCH FIGURES
    ========================================================= */
 
-/* Controls the entire figure and its caption. */
+
+/* Controls the position of the whole figure. */
 .research-figure {
 
-    /* Remove the default figure margin. */
-    margin: 35px 0;
+    /* Add space above and below the figure. */
+    margin: 40px auto;
 
-    /* Centre the figure. */
+    /* Centre the figure horizontally. */
     text-align: center;
 
 }
@@ -628,38 +629,40 @@ footer {
 /* Controls the actual image. */
 .research-figure img {
 
-    /* Make the image responsive. */
+    /* Display the figure at 700 pixels wide. */
+    width: 700px;
+
+    /* Never allow the image to exceed its container. */
     max-width: 100%;
 
-    /* Keep the original proportions. */
+    /* Automatically preserve the original 9:6 ratio. */
     height: auto;
 
-    /* Prevent the image becoming excessively large. */
-    max-height: 600px;
+    /* Do not force a maximum height. */
+    max-height: none;
 
-    /* Add a subtle border. */
+    /* Very subtle border around the image. */
     border: 1px solid #eeeeee;
 
 }
 
 
-/* Controls the caption below the image. */
+/* Controls the caption. */
 .research-figure figcaption {
 
-    /* Space above the caption. */
+    /* Space between image and caption. */
     margin-top: 12px;
 
-    /* Make the caption slightly smaller. */
-    font-size: 14px;
+    /* Caption size. */
+    font-size: 15px;
 
-    /* Use grey text. */
+    /* Grey caption colour. */
     color: #666666;
 
-    /* Use italic text for the caption. */
+    /* Italic caption. */
     font-style: italic;
 
 }
-
 /* =========================================================
    END OF STYLE.CSS
    ========================================================= */
