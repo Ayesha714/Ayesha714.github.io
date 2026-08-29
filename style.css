@@ -1,257 +1,615 @@
-/* =========================================
-   GENERAL PAGE
-========================================= */
+/* =========================================================
+   AYESHA SARWAR — ACADEMIC WEBSITE
+   File: style.css
 
+   CSS controls the appearance of your website.
+   HTML controls the actual content.
+   ========================================================= */
+
+
+/* =========================================================
+   1. BASIC SETTINGS
+   ========================================================= */
+
+/* Make width and height calculations easier to understand. */
 * {
     box-sizing: border-box;
 }
 
+
+/* Style the entire webpage. */
 body {
+
+    /* Remove the browser's default outside margin. */
     margin: 0;
-    background: #ffffff;
-    color: #333333;
+
+    /* Set the main font used throughout the website. */
     font-family: "Helvetica Neue", Arial, sans-serif;
+
+    /* Set the main text size. */
     font-size: 17px;
-    line-height: 1.75;
+
+    /* Set the spacing between lines of text. */
+    line-height: 1.7;
+
+    /* Set the main text colour. */
+    color: #333333;
+
+    /* Set the background colour of the page. */
+    background-color: #ffffff;
+
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/* =========================================================
+   2. HEADER
+   ========================================================= */
+
+/*
+   This controls the top part of the website where
+   your name, position and university are displayed.
+*/
 
 header {
-    background: #f7f7f7;
+
+    /* Space inside the header at the top and bottom. */
     padding: 55px 20px 45px;
+
+    /* Put the header text in the centre. */
+    text-align: center;
+
+    /* Give the header a very light grey background. */
+    background-color: #f7f7f7;
+
+    /* Add a thin line underneath the header. */
     border-bottom: 1px solid #e5e5e5;
+
 }
+
+
+/*
+   Limit the width of the header content.
+   This prevents the text becoming too wide on large screens.
+*/
 
 .header-container {
+
+    /* Maximum width of the header content. */
     max-width: 1050px;
-    margin: auto;
+
+    /* Automatically centre the container. */
+    margin: 0 auto;
+
 }
+
+
+/* =========================================================
+   3. YOUR NAME
+   ========================================================= */
 
 h1 {
-    margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
+
+    /* Remove the default space above the heading. */
+    margin-top: 0;
+
+    /* Remove the default space below the heading. */
+    margin-bottom: 8px;
+
+    /* Make your name large. */
     font-size: 44px;
-    font-weight: normal;
+
+    /* Do not make the letters excessively bold. */
+    font-weight: 400;
+
+    /* Use a traditional academic-style font. */
+    font-family: Georgia, "Times New Roman", serif;
+
+    /* Set the colour of your name. */
     color: #222222;
+
 }
+
+
+/* =========================================================
+   4. POSITION / JOB TITLE
+   ========================================================= */
 
 .position {
-    margin: 8px 0 0;
+
+    /* Small space above the position. */
+    margin-top: 8px;
+
+    /* Remove unnecessary space below. */
+    margin-bottom: 2px;
+
+    /* Make the position slightly larger than normal text. */
     font-size: 20px;
+
+    /* Use a softer grey. */
     color: #555555;
+
 }
+
+
+/* =========================================================
+   5. UNIVERSITY
+   ========================================================= */
 
 .institution {
-    margin: 2px 0 0;
+
+    /* Remove unnecessary space above. */
+    margin-top: 0;
+
+    /* Remove unnecessary space below. */
+    margin-bottom: 0;
+
+    /* Slightly smaller than the position. */
     font-size: 17px;
+
+    /* Grey colour. */
     color: #777777;
+
 }
 
 
-/* =========================================
-   NAVIGATION
-========================================= */
+/* =========================================================
+   6. NAVIGATION BAR
+   ========================================================= */
+
+/*
+   This controls the menu:
+
+   HOME | RESEARCH | PUBLICATIONS | TEACHING | CV | CONTACT
+*/
 
 nav {
-    background: white;
-    border-bottom: 1px solid #dddddd;
+
+    /* White background. */
+    background-color: #ffffff;
+
+    /* Put the links in the centre. */
     text-align: center;
+
+    /* Space above and below the links. */
     padding: 16px 10px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+
+    /* Add a line underneath the navigation. */
+    border-bottom: 1px solid #dddddd;
+
 }
+
+
+/* Style each navigation link. */
 
 nav a {
+
+    /* Allow the links to sit next to each other. */
     display: inline-block;
+
+    /* Space between navigation items. */
     margin: 0 17px;
+
+    /* Navigation text colour. */
     color: #333333;
+
+    /* Remove the default underline. */
     text-decoration: none;
+
+    /* Make the navigation slightly smaller. */
     font-size: 14px;
-    font-weight: 500;
+
+    /* Slightly increase spacing between letters. */
     letter-spacing: 0.8px;
+
+    /* Make the navigation moderately bold. */
+    font-weight: 500;
+
 }
+
+
+/*
+   Change the colour when the mouse is placed
+   over a navigation link.
+*/
 
 nav a:hover {
-    color: #777777;
+
+    color: #315f82;
+
 }
 
 
-/* =========================================
-   MAIN CONTENT
-========================================= */
+/* =========================================================
+   7. MAIN CONTENT AREA
+   ========================================================= */
+
+/*
+   This controls the main part of the website.
+*/
 
 main {
-    max-width: 1050px;
+
+    /* Maximum width of the content. */
+    max-width: 1000px;
+
+    /* Automatically centre the content. */
     margin: 0 auto;
+
+    /* Space around the content. */
     padding: 55px 45px;
+
 }
+
+
+/* =========================================================
+   8. SECTIONS
+   ========================================================= */
+
+/*
+   Every section such as About, Research and Publications
+   gets space underneath it.
+*/
 
 section {
+
+    /* Space between sections. */
     margin-bottom: 65px;
+
 }
 
 
-/* =========================================
-   HEADINGS
-========================================= */
+/* =========================================================
+   9. SECTION HEADINGS
+   ========================================================= */
+
+/*
+   This controls headings such as:
+
+   About
+   Research
+   Publications
+   Teaching
+*/
 
 h2 {
+
+    /* Use an academic-style serif font. */
     font-family: Georgia, "Times New Roman", serif;
+
+    /* Size of section headings. */
     font-size: 29px;
-    font-weight: normal;
+
+    /* Normal rather than very bold. */
+    font-weight: 400;
+
+    /* Dark grey colour. */
     color: #222222;
 
+    /* Remove default top spacing. */
     margin-top: 0;
+
+    /* Space below heading. */
     margin-bottom: 25px;
 
+    /* Space between text and bottom border. */
     padding-bottom: 10px;
 
+    /* Thin line below section heading. */
     border-bottom: 1px solid #dddddd;
+
 }
+
+
+/* =========================================================
+   10. SMALLER HEADINGS
+   ========================================================= */
 
 h3 {
+
+    /* Publication titles etc. */
     font-size: 19px;
+
+    /* Make them moderately bold. */
     font-weight: 600;
+
+    /* Dark grey. */
     color: #333333;
+
 }
 
 
-/* =========================================
-   TEXT
-========================================= */
+/* =========================================================
+   11. NORMAL PARAGRAPHS
+   ========================================================= */
 
 p {
+
+    /* Remove unnecessary top spacing. */
     margin-top: 0;
+
+    /* Add space between paragraphs. */
     margin-bottom: 18px;
+
 }
 
 
-/* =========================================
-   LINKS
-========================================= */
+/* =========================================================
+   12. LINKS
+   ========================================================= */
+
+/*
+   This controls links such as:
+
+   GitHub
+   ORCID
+   Google Scholar
+   DOI
+*/
 
 a {
+
+    /* Blue academic-style link colour. */
     color: #315f82;
+
 }
+
+
+/*
+   Change the appearance when the mouse is over a link.
+*/
 
 a:hover {
+
+    /* Use a darker blue. */
     color: #1d4059;
+
+    /* Add underline when hovering. */
+    text-decoration: underline;
+
 }
 
 
-/* =========================================
-   LISTS
-========================================= */
+/* =========================================================
+   13. LISTS
+   ========================================================= */
+
+/*
+   This controls bullet lists such as your
+   research interests.
+*/
 
 ul {
+
+    /* Move the bullet points slightly to the right. */
     padding-left: 25px;
+
 }
+
+
+/*
+   Add a little space between individual bullets.
+*/
 
 li {
-    margin-bottom: 7px;
+
+    margin-bottom: 8px;
+
 }
 
 
-/* =========================================
-   PUBLICATIONS
-========================================= */
+/* =========================================================
+   14. PUBLICATIONS
+   ========================================================= */
+
+/*
+   Each publication can be placed inside:
+
+   <div class="publication">
+
+*/
 
 .publication {
+
+    /* Space above and below each publication. */
     padding: 20px 0;
+
+    /* Add a subtle line below each publication. */
     border-bottom: 1px solid #eeeeee;
+
 }
+
+
+/*
+   Remove excessive space above publication titles.
+*/
 
 .publication h3 {
+
     margin-top: 0;
+
     margin-bottom: 8px;
+
 }
+
+
+/*
+   Control the paragraphs inside publications.
+*/
 
 .publication p {
+
     margin-bottom: 8px;
+
 }
 
 
-/* =========================================
-   CV BUTTON
-========================================= */
+/* =========================================================
+   15. CV BUTTON
+   ========================================================= */
+
+/*
+   If your HTML uses:
+
+   <a class="cv-button" href="CV.pdf">Download CV</a>
+
+   this CSS will make it look like a button.
+*/
 
 .cv-button {
+
+    /* Make the link behave like a button. */
     display: inline-block;
 
+    /* Space inside the button. */
     padding: 10px 22px;
 
-    background: #333333;
+    /* Dark background. */
+    background-color: #333333;
 
-    color: white;
+    /* White text. */
+    color: #ffffff;
 
+    /* Remove underline. */
     text-decoration: none;
 
+    /* Slightly rounded corners. */
     border-radius: 3px;
 
+    /* Button text size. */
     font-size: 15px;
+
 }
+
+
+/*
+   Change button appearance when the mouse
+   is placed over it.
+*/
 
 .cv-button:hover {
-    background: #555555;
-    color: white;
+
+    /* Slightly lighter background. */
+    background-color: #555555;
+
+    /* Keep text white. */
+    color: #ffffff;
+
+    /* Do not underline the button. */
     text-decoration: none;
+
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/* =========================================================
+   16. FOOTER
+   ========================================================= */
+
+/*
+   This controls the bottom of the website.
+*/
 
 footer {
+
+    /* Add a line above the footer. */
     border-top: 1px solid #dddddd;
 
+    /* Centre the footer text. */
     text-align: center;
 
+    /* Space inside the footer. */
     padding: 30px 20px;
 
+    /* Space above the footer. */
+    margin-top: 60px;
+
+    /* Grey text. */
     color: #777777;
 
+    /* Smaller text. */
     font-size: 14px;
+
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* =========================================================
+   17. MOBILE PHONE / TABLET
+   ========================================================= */
+
+/*
+   These instructions apply when the screen is
+   narrower than 700 pixels.
+
+   This makes your website work properly on phones.
+*/
 
 @media (max-width: 700px) {
 
+
+    /* Reduce the header spacing on small screens. */
+
     header {
+
         padding: 40px 20px;
+
     }
+
+
+    /* Make your name smaller on phones. */
 
     h1 {
+
         font-size: 34px;
+
     }
+
+
+    /* Make your position slightly smaller. */
 
     .position {
+
         font-size: 18px;
+
     }
+
+
+    /* Navigation does not remain fixed on small screens. */
 
     nav {
+
         position: static;
+
     }
+
+
+    /* Put navigation links on multiple lines if necessary. */
 
     nav a {
+
         margin: 5px 9px;
+
     }
+
+
+    /* Reduce the main content padding. */
 
     main {
+
         padding: 40px 25px;
+
     }
 
+
+    /* Slightly reduce section heading size. */
+
     h2 {
+
         font-size: 26px;
+
     }
 
 }
+
+
+/* =========================================================
+   END OF STYLE.CSS
+   ========================================================= */
