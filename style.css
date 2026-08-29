@@ -1,3 +1,4 @@
+```css
 /* =========================================================
    AYESHA SARWAR — ACADEMIC WEBSITE
    File: style.css
@@ -23,19 +24,19 @@ body {
     /* Remove the browser's default outside margin. */
     margin: 0;
 
-    /* Set the main font used throughout the website. */
+    /* Main font used throughout the website. */
     font-family: "Helvetica Neue", Arial, sans-serif;
 
-    /* Set the main text size. */
+    /* Main text size. */
     font-size: 17px;
 
-    /* Set the spacing between lines of text. */
+    /* Space between lines of text. */
     line-height: 1.7;
 
-    /* Set the main text colour. */
+    /* Main text colour. */
     color: #333333;
 
-    /* Set the background colour of the page. */
+    /* White background. */
     background-color: #ffffff;
 
 }
@@ -45,39 +46,30 @@ body {
    2. HEADER
    ========================================================= */
 
-/*
-   This controls the top part of the website where
-   your name, position and university are displayed.
-*/
-
 header {
 
-    /* Space inside the header at the top and bottom. */
+    /* Space inside the header. */
     padding: 55px 20px 45px;
 
-    /* Put the header text in the centre. */
+    /* Centre the header text. */
     text-align: center;
 
-    /* Give the header a very light grey background. */
+    /* Very light grey background. */
     background-color: #f7f7f7;
 
-    /* Add a thin line underneath the header. */
+    /* Thin line underneath the header. */
     border-bottom: 1px solid #e5e5e5;
 
 }
 
 
-/*
-   Limit the width of the header content.
-   This prevents the text becoming too wide on large screens.
-*/
-
+/* Limit the width of the header content. */
 .header-container {
 
-    /* Maximum width of the header content. */
+    /* Maximum width of header content. */
     max-width: 900px;
 
-    /* Automatically centre the container. */
+    /* Centre the header container. */
     margin: 0 auto;
 
 }
@@ -89,22 +81,22 @@ header {
 
 h1 {
 
-    /* Remove the default space above the heading. */
+    /* Remove space above your name. */
     margin-top: 0;
 
-    /* Remove the default space below the heading. */
+    /* Small space below your name. */
     margin-bottom: 8px;
 
-    /* Make your name large. */
+    /* Size of your name. */
     font-size: 44px;
 
-    /* Do not make the letters excessively bold. */
+    /* Normal rather than very bold. */
     font-weight: 400;
 
-    /* Use a traditional academic-style font. */
+    /* Academic-style serif font. */
     font-family: Georgia, "Times New Roman", serif;
 
-    /* Set the colour of your name. */
+    /* Dark colour. */
     color: #222222;
 
 }
@@ -116,16 +108,16 @@ h1 {
 
 .position {
 
-    /* Small space above the position. */
+    /* Small space above. */
     margin-top: 8px;
 
-    /* Remove unnecessary space below. */
+    /* Small space below. */
     margin-bottom: 2px;
 
-    /* Make the position slightly larger than normal text. */
+    /* Position text size. */
     font-size: 20px;
 
-    /* Use a softer grey. */
+    /* Softer grey colour. */
     color: #555555;
 
 }
@@ -143,7 +135,7 @@ h1 {
     /* Remove unnecessary space below. */
     margin-bottom: 0;
 
-    /* Slightly smaller than the position. */
+    /* University text size. */
     font-size: 17px;
 
     /* Grey colour. */
@@ -156,62 +148,51 @@ h1 {
    6. NAVIGATION BAR
    ========================================================= */
 
-/*
-   This controls the menu:
-
-   HOME | RESEARCH | PUBLICATIONS | TEACHING | CV | CONTACT
-*/
-
 nav {
 
     /* White background. */
     background-color: #ffffff;
 
-    /* Put the links in the centre. */
+    /* Centre the navigation links. */
     text-align: center;
 
-    /* Space above and below the links. */
+    /* Space above and below navigation. */
     padding: 16px 10px;
 
-    /* Add a line underneath the navigation. */
+    /* Thin line below navigation. */
     border-bottom: 1px solid #dddddd;
 
 }
 
 
 /* Style each navigation link. */
-
 nav a {
 
-    /* Allow the links to sit next to each other. */
+    /* Keep links next to each other. */
     display: inline-block;
 
-    /* Space between navigation items. */
+    /* Space between links. */
     margin: 0 17px;
 
-    /* Navigation text colour. */
+    /* Link colour. */
     color: #333333;
 
-    /* Remove the default underline. */
+    /* Remove underline. */
     text-decoration: none;
 
-    /* Make the navigation slightly smaller. */
+    /* Navigation font size. */
     font-size: 14px;
 
-    /* Slightly increase spacing between letters. */
+    /* Slight letter spacing. */
     letter-spacing: 0.8px;
 
-    /* Make the navigation moderately bold. */
+    /* Moderately bold. */
     font-weight: 500;
 
 }
 
 
-/*
-   Change the colour when the mouse is placed
-   over a navigation link.
-*/
-
+/* Change navigation colour when the mouse is over it. */
 nav a:hover {
 
     color: #315f82;
@@ -224,19 +205,23 @@ nav a:hover {
    ========================================================= */
 
 /*
-   This controls the main part of the website.
+   This is the important section controlling
+   how far the text sits from the left side.
 */
 
 main {
 
-    /* Maximum width of the content. */
-    max-width: 1000px;
+    /* Make the content narrower and more comfortable to read. */
+    max-width: 900px;
 
-    /* Automatically centre the content. */
+    /* Centre the entire content area. */
     margin: 0 auto;
 
-    /* Space around the content. */
-    padding: 55px 45px;
+    /*
+       55px = top/bottom space
+       70px = left/right space
+    */
+    padding: 55px 70px;
 
 }
 
@@ -244,11 +229,6 @@ main {
 /* =========================================================
    8. SECTIONS
    ========================================================= */
-
-/*
-   Every section such as About, Research and Publications
-   gets space underneath it.
-*/
 
 section {
 
@@ -262,39 +242,30 @@ section {
    9. SECTION HEADINGS
    ========================================================= */
 
-/*
-   This controls headings such as:
-
-   About
-   Research
-   Publications
-   Teaching
-*/
-
 h2 {
 
-    /* Use an academic-style serif font. */
+    /* Academic-style serif font. */
     font-family: Georgia, "Times New Roman", serif;
 
-    /* Size of section headings. */
+    /* Heading size. */
     font-size: 29px;
 
-    /* Normal rather than very bold. */
+    /* Normal rather than bold. */
     font-weight: 400;
 
-    /* Dark grey colour. */
+    /* Dark grey. */
     color: #222222;
 
-    /* Remove default top spacing. */
+    /* Remove default top margin. */
     margin-top: 0;
 
     /* Space below heading. */
     margin-bottom: 25px;
 
-    /* Space between text and bottom border. */
+    /* Space between heading and line. */
     padding-bottom: 10px;
 
-    /* Thin line below section heading. */
+    /* Thin line below heading. */
     border-bottom: 1px solid #dddddd;
 
 }
@@ -306,10 +277,10 @@ h2 {
 
 h3 {
 
-    /* Publication titles etc. */
+    /* Publication title size. */
     font-size: 19px;
 
-    /* Make them moderately bold. */
+    /* Moderately bold. */
     font-weight: 600;
 
     /* Dark grey. */
@@ -324,10 +295,10 @@ h3 {
 
 p {
 
-    /* Remove unnecessary top spacing. */
+    /* Remove unnecessary space above paragraphs. */
     margin-top: 0;
 
-    /* Add space between paragraphs. */
+    /* Space between paragraphs. */
     margin-bottom: 18px;
 
 }
@@ -337,33 +308,21 @@ p {
    12. LINKS
    ========================================================= */
 
-/*
-   This controls links such as:
-
-   GitHub
-   ORCID
-   Google Scholar
-   DOI
-*/
-
 a {
 
-    /* Blue academic-style link colour. */
+    /* Academic-style blue. */
     color: #315f82;
 
 }
 
 
-/*
-   Change the appearance when the mouse is over a link.
-*/
-
+/* Change links when the mouse is over them. */
 a:hover {
 
-    /* Use a darker blue. */
+    /* Darker blue. */
     color: #1d4059;
 
-    /* Add underline when hovering. */
+    /* Underline on hover. */
     text-decoration: underline;
 
 }
@@ -373,23 +332,15 @@ a:hover {
    13. LISTS
    ========================================================= */
 
-/*
-   This controls bullet lists such as your
-   research interests.
-*/
-
 ul {
 
-    /* Move the bullet points slightly to the right. */
+    /* Move bullet points slightly inward. */
     padding-left: 25px;
 
 }
 
 
-/*
-   Add a little space between individual bullets.
-*/
-
+/* Space between bullet points. */
 li {
 
     margin-bottom: 8px;
@@ -401,28 +352,18 @@ li {
    14. PUBLICATIONS
    ========================================================= */
 
-/*
-   Each publication can be placed inside:
-
-   <div class="publication">
-
-*/
-
 .publication {
 
-    /* Space above and below each publication. */
+    /* Space above and below publications. */
     padding: 20px 0;
 
-    /* Add a subtle line below each publication. */
+    /* Subtle line underneath each publication. */
     border-bottom: 1px solid #eeeeee;
 
 }
 
 
-/*
-   Remove excessive space above publication titles.
-*/
-
+/* Publication heading spacing. */
 .publication h3 {
 
     margin-top: 0;
@@ -432,10 +373,7 @@ li {
 }
 
 
-/*
-   Control the paragraphs inside publications.
-*/
-
+/* Publication paragraph spacing. */
 .publication p {
 
     margin-bottom: 8px;
@@ -447,14 +385,6 @@ li {
    15. CV BUTTON
    ========================================================= */
 
-/*
-   If your HTML uses:
-
-   <a class="cv-button" href="CV.pdf">Download CV</a>
-
-   this CSS will make it look like a button.
-*/
-
 .cv-button {
 
     /* Make the link behave like a button. */
@@ -463,10 +393,10 @@ li {
     /* Space inside the button. */
     padding: 10px 22px;
 
-    /* Dark background. */
+    /* Dark button background. */
     background-color: #333333;
 
-    /* White text. */
+    /* White button text. */
     color: #ffffff;
 
     /* Remove underline. */
@@ -481,11 +411,7 @@ li {
 }
 
 
-/*
-   Change button appearance when the mouse
-   is placed over it.
-*/
-
+/* CV button hover effect. */
 .cv-button:hover {
 
     /* Slightly lighter background. */
@@ -494,32 +420,93 @@ li {
     /* Keep text white. */
     color: #ffffff;
 
-    /* Do not underline the button. */
+    /* Do not underline. */
     text-decoration: none;
 
 }
 
 
 /* =========================================================
-   16. FOOTER
+   16. RESEARCH FIGURES
    ========================================================= */
 
+
 /*
-   This controls the bottom of the website.
+   Controls the whole figure and its position.
 */
+
+.research-figure {
+
+    /* Space above and below the figure. */
+    margin: 40px auto;
+
+    /* Centre the figure. */
+    text-align: center;
+
+}
+
+
+/*
+   Controls the actual research image.
+*/
+
+.research-figure img {
+
+    /*
+       Your Python figure is 9 x 6.
+       550px wide gives approximately 367px height.
+    */
+    width: 550px;
+
+    /* Never allow the figure to exceed the screen. */
+    max-width: 100%;
+
+    /* Keep the original 9:6 aspect ratio. */
+    height: auto;
+
+    /* Very subtle border. */
+    border: 1px solid #eeeeee;
+
+}
+
+
+/*
+   Controls the figure caption.
+*/
+
+.research-figure figcaption {
+
+    /* Space between image and caption. */
+    margin-top: 12px;
+
+    /* Caption font size. */
+    font-size: 15px;
+
+    /* Grey caption colour. */
+    color: #666666;
+
+    /* Italic caption. */
+    font-style: italic;
+
+}
+
+
+/* =========================================================
+   17. FOOTER
+   ========================================================= */
 
 footer {
 
-    /* Add a line above the footer. */
+    /* Thin line above footer. */
     border-top: 1px solid #dddddd;
 
-    /* Centre the footer text. */
+    /* Centre footer text. */
     text-align: center;
 
-    /* Space inside the footer. */
+    /* Space inside footer. */
     padding: 30px 20px;
 
-    /* Space above the footer. */
+    /* Space above footer. */
     margin-top: 60px;
 
     /* Grey text. */
@@ -532,20 +519,18 @@ footer {
 
 
 /* =========================================================
-   17. MOBILE PHONE / TABLET
+   18. MOBILE PHONE / TABLET
    ========================================================= */
 
 /*
-   These instructions apply when the screen is
+   These instructions apply to screens
    narrower than 700 pixels.
-
-   This makes your website work properly on phones.
 */
 
 @media (max-width: 700px) {
 
 
-    /* Reduce the header spacing on small screens. */
+    /* Reduce header spacing on phones. */
 
     header {
 
@@ -563,7 +548,7 @@ footer {
     }
 
 
-    /* Make your position slightly smaller. */
+    /* Make your position smaller. */
 
     .position {
 
@@ -572,7 +557,7 @@ footer {
     }
 
 
-    /* Navigation does not remain fixed on small screens. */
+    /* Keep navigation simple on phones. */
 
     nav {
 
@@ -581,7 +566,7 @@ footer {
     }
 
 
-    /* Put navigation links on multiple lines if necessary. */
+    /* Allow navigation links to wrap. */
 
     nav a {
 
@@ -590,7 +575,9 @@ footer {
     }
 
 
-    /* Reduce the main content padding. */
+    /*
+       Reduce the main content padding on phones.
+    */
 
     main {
 
@@ -599,7 +586,7 @@ footer {
     }
 
 
-    /* Slightly reduce section heading size. */
+    /* Smaller section headings on phones. */
 
     h2 {
 
@@ -607,62 +594,24 @@ footer {
 
     }
 
-}
 
-/* =========================================================
-   RESEARCH FIGURES
-   ========================================================= */
+    /*
+       Make the research figure fit comfortably
+       on a phone.
+    */
 
+    .research-figure img {
 
-/* Controls the position of the whole figure. */
-.research-figure {
+        width: 100%;
 
-    /* Add space above and below the figure. */
-    margin: 40px auto;
+        max-width: 550px;
 
-    /* Centre the figure horizontally. */
-    text-align: center;
+    }
 
 }
 
 
-/* Controls the actual image. */
-.research-figure img {
-
-    /* Display the figure at 700 pixels wide. */
-    width: 700px;
-
-    /* Never allow the image to exceed its container. */
-    max-width: 100%;
-
-    /* Automatically preserve the original 9:6 ratio. */
-    height: auto;
-
-    /* Do not force a maximum height. */
-    max-height: none;
-
-    /* Very subtle border around the image. */
-    border: 1px solid #eeeeee;
-
-}
-
-
-/* Controls the caption. */
-.research-figure figcaption {
-
-    /* Space between image and caption. */
-    margin-top: 12px;
-
-    /* Caption size. */
-    font-size: 15px;
-
-    /* Grey caption colour. */
-    color: #666666;
-
-    /* Italic caption. */
-    font-style: italic;
-
-}
 /* =========================================================
    END OF STYLE.CSS
    ========================================================= */
+```
