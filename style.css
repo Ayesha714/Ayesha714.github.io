@@ -609,6 +609,56 @@ footer {
 
 }
 
+/* =========================================================
+   RESEARCH FIGURES
+   ========================================================= */
+
+/* Controls the entire figure and its caption. */
+.research-figure {
+
+    /* Remove the default figure margin. */
+    margin: 35px 0;
+
+    /* Centre the figure. */
+    text-align: center;
+
+}
+
+
+/* Controls the actual image. */
+.research-figure img {
+
+    /* Make the image responsive. */
+    max-width: 100%;
+
+    /* Keep the original proportions. */
+    height: auto;
+
+    /* Prevent the image becoming excessively large. */
+    max-height: 600px;
+
+    /* Add a subtle border. */
+    border: 1px solid #eeeeee;
+
+}
+
+
+/* Controls the caption below the image. */
+.research-figure figcaption {
+
+    /* Space above the caption. */
+    margin-top: 12px;
+
+    /* Make the caption slightly smaller. */
+    font-size: 14px;
+
+    /* Use grey text. */
+    color: #666666;
+
+    /* Use italic text for the caption. */
+    font-style: italic;
+
+}
 
 /* =========================================================
    END OF STYLE.CSS
