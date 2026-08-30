@@ -1,572 +1,167 @@
-```css
 /* =========================================================
-   AYESHA SARWAR — MODERN ACADEMIC WEBSITE
-   File: style.css
-
-   Clean, modern academic/researcher design
+   OPTION 2 — CLASSIC ACADEMIC
+   More traditional university/researcher appearance
    ========================================================= */
 
 
-/* =========================================================
-   1. BASIC SETTINGS
-   ========================================================= */
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+/* ---------------------------------------------------------
+   BODY
+   --------------------------------------------------------- */
 
 body {
-    margin: 0;
-
     font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
-        "Helvetica Neue",
         Arial,
         sans-serif;
 
-    font-size: 17px;
-    line-height: 1.75;
-
-    color: #273444;
-    background-color: #ffffff;
+    color: #303030;
+    background: #ffffff;
 }
 
 
-/* =========================================================
-   2. HEADER
-   ========================================================= */
+/* ---------------------------------------------------------
+   HEADER
+   No gradient — very traditional
+   --------------------------------------------------------- */
 
 header {
-    padding: 75px 25px 65px;
+    padding: 65px 25px 55px;
 
-    text-align: center;
+    background: #ffffff;
 
-    background:
-        linear-gradient(
-            135deg,
-            #f5f8fb 0%,
-            #ffffff 55%,
-            #f1f5f9 100%
-        );
-
-    border-bottom: 1px solid #e4e9ee;
-}
-
-.header-container {
-    max-width: 1000px;
-    margin: 0 auto;
+    border-bottom: 1px solid #dddddd;
 }
 
 
-/* =========================================================
-   3. NAME
-   ========================================================= */
+/* ---------------------------------------------------------
+   NAME
+   --------------------------------------------------------- */
 
 h1 {
-    margin: 0 0 12px;
-
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size: 52px;
-    font-weight: 400;
+    font-size: 50px;
 
-    letter-spacing: -1px;
-
-    color: #172334;
+    color: #222222;
 }
 
 
-/* =========================================================
-   4. POSITION
-   ========================================================= */
+/* ---------------------------------------------------------
+   POSITION
+   --------------------------------------------------------- */
 
 .position {
-    margin: 0 0 5px;
-
-    font-size: 21px;
-    font-weight: 400;
-
-    color: #315f82;
+    color: #555555;
 }
 
 
-/* =========================================================
-   5. UNIVERSITY
-   ========================================================= */
+/* ---------------------------------------------------------
+   UNIVERSITY
+   --------------------------------------------------------- */
 
 .institution {
-    margin: 0;
-
-    font-size: 17px;
-
-    color: #687585;
+    color: #777777;
 }
 
 
-/* =========================================================
-   6. NAVIGATION
-   ========================================================= */
+/* ---------------------------------------------------------
+   NAVIGATION
+   --------------------------------------------------------- */
 
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background: #ffffff;
 
-    padding: 17px 20px;
+    border-bottom: 1px solid #dddddd;
 
-    text-align: center;
-
-    background-color: rgba(255, 255, 255, 0.97);
-
-    border-bottom: 1px solid #e5e9ed;
-
-    backdrop-filter: blur(8px);
+    box-shadow: none;
 }
+
+
+/* ---------------------------------------------------------
+   NAVIGATION LINKS
+   --------------------------------------------------------- */
 
 nav a {
-    display: inline-block;
+    color: #333333;
 
-    margin: 0 15px;
-    padding: 5px 0;
+    font-size: 13px;
 
-    color: #334155;
-
-    text-decoration: none;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    letter-spacing: 0.7px;
-
-    text-transform: uppercase;
-
-    transition:
-        color 0.2s ease,
-        border-color 0.2s ease;
-}
-
-nav a:hover {
-    color: #315f82;
-
-    text-decoration: none;
+    letter-spacing: 0.5px;
 }
 
 
-/* =========================================================
-   7. MAIN CONTENT
-   ========================================================= */
-
-main {
-    max-width: 1000px;
-
-    margin: 0 auto;
-
-    padding: 75px 65px;
-}
-
-
-/* =========================================================
-   8. SECTIONS
-   ========================================================= */
-
-section {
-    margin-bottom: 80px;
-}
-
-
-/* =========================================================
-   9. SECTION HEADINGS
-   ========================================================= */
+/* ---------------------------------------------------------
+   H2
+   --------------------------------------------------------- */
 
 h2 {
-    position: relative;
+    color: #222222;
 
-    margin: 0 0 30px;
+    border-bottom: 1px solid #dddddd;
 
-    padding-bottom: 14px;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 32px;
-    font-weight: 400;
-
-    color: #172334;
+    padding-bottom: 12px;
 }
 
 
-/* Small academic accent underneath heading */
-
+/* Remove blue decorative line */
 h2::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    width: 55px;
-    height: 3px;
-
-    background-color: #315f82;
+    display: none;
 }
 
 
-/* =========================================================
-   10. SMALLER HEADINGS
-   ========================================================= */
-
-h3 {
-    margin-top: 0;
-
-    font-size: 19px;
-    font-weight: 650;
-
-    line-height: 1.4;
-
-    color: #243447;
-}
-
-
-/* =========================================================
-   11. PARAGRAPHS
-   ========================================================= */
-
-p {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-
-/* =========================================================
-   12. GENERAL LINKS
-   ========================================================= */
-
-a {
-    color: #315f82;
-
-    text-decoration: none;
-
-    transition:
-        color 0.2s ease;
-}
-
-a:hover {
-    color: #173f5f;
-
-    text-decoration: underline;
-}
-
-
-/* =========================================================
-   13. LISTS
-   ========================================================= */
-
-ul {
-    padding-left: 25px;
-}
-
-li {
-    margin-bottom: 9px;
-}
-
-
-/* =========================================================
-   14. PUBLICATIONS
-   ========================================================= */
+/* ---------------------------------------------------------
+   PUBLICATIONS
+   No card background
+   Looks more like an academic CV
+   --------------------------------------------------------- */
 
 .publication {
-    position: relative;
+    margin-bottom: 30px;
 
-    margin-bottom: 24px;
-    padding: 25px 28px;
+    padding: 0 0 25px 20px;
 
-    background-color: #f8fafc;
+    background: transparent;
 
-    border: 1px solid #e7ecf1;
+    border: none;
 
-    border-left: 4px solid #315f82;
+    border-left: 3px solid #315f82;
 
-    border-radius: 5px;
+    border-radius: 0;
 
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    box-shadow: none;
 }
 
 
-/* Small lift when hovering */
-
+/* No floating animation */
 .publication:hover {
-    transform: translateY(-2px);
+    transform: none;
 
-    box-shadow:
-        0 8px 25px rgba(30, 50, 70, 0.08);
+    box-shadow: none;
 }
 
 
-.publication h3 {
-    margin: 0 0 9px;
-}
-
-.publication p {
-    margin-bottom: 8px;
-}
-
-
-/* =========================================================
-   15. CV BUTTON
-   ========================================================= */
+/* ---------------------------------------------------------
+   CV BUTTON
+   --------------------------------------------------------- */
 
 .cv-button {
-    display: inline-block;
+    background: transparent;
 
-    margin-top: 8px;
-
-    padding: 11px 24px;
-
-    background-color: #315f82;
-
-    color: #ffffff;
+    color: #315f82;
 
     border: 1px solid #315f82;
 
-    border-radius: 4px;
-
-    font-size: 15px;
-    font-weight: 600;
-
-    text-decoration: none;
-
-    transition:
-        background-color 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    border-radius: 3px;
 }
+
 
 .cv-button:hover {
-    background-color: #244b67;
+    background: #315f82;
 
     color: #ffffff;
-
-    text-decoration: none;
-
-    transform: translateY(-1px);
-
-    box-shadow:
-        0 5px 14px rgba(49, 95, 130, 0.2);
 }
-
-
-/* =========================================================
-   RESEARCH FIGURE — SMALL FIGURE BESIDE HEADING
-   ========================================================= */
-
-.research-figure {
-    float: right;
-
-    width: 150px;
-
-    margin: 0 0 20px 30px;
-
-    padding: 0;
-
-    text-align: center;
-
-    background: none;
-
-    border: none;
-}
-
-
-.research-figure img {
-    display: block;
-
-    width: 100%;
-
-    max-width: 150px;
-
-    height: auto;
-
-    margin: 0;
-
-    border: none;
-
-    border-radius: 2px;
-}
-
-
-.research-figure figcaption {
-    margin-top: 8px;
-
-    font-size: 12px;
-
-    line-height: 1.4;
-
-    color: #697586;
-
-    font-style: italic;
-}
-
-/* =========================================================
-   17. FOOTER
-   ========================================================= */
-
-footer {
-    margin-top: 70px;
-
-    padding: 35px 20px;
-
-    text-align: center;
-
-    background-color: #f6f8fa;
-
-    border-top: 1px solid #e2e7ec;
-
-    color: #718096;
-
-    font-size: 14px;
-}
-
-
-/* =========================================================
-   18. SELECTION
-   ========================================================= */
-
-::selection {
-    background-color: #dce8f0;
-    color: #172334;
-}
-
-
-/* =========================================================
-   19. MOBILE / TABLET
-   ========================================================= */
-
-@media (max-width: 700px) {
-
-    header {
-        padding: 55px 20px 45px;
-    }
-
-
-    h1 {
-        font-size: 38px;
-        letter-spacing: -0.5px;
-    }
-
-
-    .position {
-        font-size: 18px;
-    }
-
-
-    .institution {
-        font-size: 16px;
-    }
-
-
-    nav {
-        position: static;
-
-        padding: 13px 10px;
-    }
-
-
-    nav a {
-        margin: 4px 8px;
-
-        font-size: 12px;
-    }
-
-
-    main {
-        padding: 50px 25px;
-    }
-
-
-    section {
-        margin-bottom: 60px;
-    }
-
-
-    h2 {
-        font-size: 28px;
-    }
-
-
-    h3 {
-        font-size: 18px;
-    }
-
-
-    .publication {
-        padding: 21px 20px;
-    }
-
-
-    .research-figure {
-        padding: 15px;
-    }
-
-
-    .research-figure img {
-        width: 100%;
-    }
-
-
-    .research-figure figcaption {
-        font-size: 13px;
-    }
-}
-
-
-/* =========================================================
-   20. VERY SMALL PHONES
-   ========================================================= */
-
-@media (max-width: 450px) {
-
-    h1 {
-        font-size: 32px;
-    }
-
-
-    .position {
-        font-size: 17px;
-    }
-
-
-    nav a {
-        margin: 3px 6px;
-
-        font-size: 11px;
-    }
-
-
-    main {
-        padding: 40px 20px;
-    }
-
-
-    h2 {
-        font-size: 25px;
-    }
-}
-
-
-/* =========================================================
-   END OF STYLE.CSS
-   ========================================================= */
-```
